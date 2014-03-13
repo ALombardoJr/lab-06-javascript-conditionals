@@ -1,0 +1,18 @@
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<script>
+var num = prompt("Please enter a number");
+var ones = num % 10;
+var tens = (num % 100 - ones) / 10;
+var hunds = (num % 1000 - tens * 10 - ones) / 100;
+var thous = (num % 10000 - hunds * 100 - tens * 10 - ones) / 1000;
+console.log(thous + " thousands");
+console.log(hunds + " hundreds");
+console.log(tens + " tens");
+console.log(ones + " ones");
+</script>
+</body>
+</html>
